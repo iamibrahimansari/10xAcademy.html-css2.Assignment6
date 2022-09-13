@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: #eee;
+}
+
+.container {
+    background-color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > .div {
+    background-color: #444;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid #eee;
+}
