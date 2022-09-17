@@ -1,0 +1,106 @@
+@media only screen and (max-width: 800px) {
+    .dog-list {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .dog-list > div {
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: 25% auto;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        align-items: start;
+    }
+
+    .dog-list > div > h3 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: start;
+        margin-top: 2rem;
+    }
+
+    .dog-list > div > img {
+        grid-column: 1/2;
+        grid-row: 2/-1;
+    }
+
+    .dog-list > div > p {
+        grid-column: 2/-1;
+        grid-row: 1/3;
+        text-align: left;
+        margin-left: 3rem;
+        align-self: start;
+        margin-top: 2rem;
+    }
+
+    .dog-list > div > .btn {
+        grid-column: 2/-1;
+        grid-row: 3/4;
+        margin-left: 3rem;
+        width: 50%;
+        justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .dog-list {
+        gap: 1rem;
+    }
+    .dog-list > div {
+        grid-template-rows: repeat(4, 1fr);
+        align-content: center;
+        justify-items: center;
+        gap: 0;
+    }
+    .dog-list > div > h3 {
+        align-self: end;
+        margin-bottom: 1rem;
+    }
+    .dog-list > div > img {
+        grid-row: 2/4;
+    }
+    .dog-list > div > .btn {
+        grid-column: 1/2;
+        grid-row: 4/-1;
+        width: 100%;
+        align-self: center;
+        justify-self: end;
+    }
+    .dog-list > div > p {
+        grid-column: 2/-1;
+        grid-row: 1/-1;
+        align-self: center;
+        margin-left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .dog-list {
+        gap: 5rem;
+    }
+    .dog-list > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        background-color: #f7f7f7;
+        padding: 2rem;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    .dog-list > div > h3 {
+        align-self: center;
+        margin: 0;
+    }
+    .dog-list > div > p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .dog-list > div > .btn {
+        margin: 0;
+        width: 50%;
+    }
+    footer > ul {
+        margin: 2rem auto;
+    }
+}

@@ -1,0 +1,143 @@
+:root {
+    --dark-sky-color: #3f8da7;
+    --none: none;
+    --center: center;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.color-white {
+    color: var(--white);
+}
+
+header {
+    background-color: #92e0e5;
+    align-items: var(--center);
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav > ul {
+    list-style-type: var(--none);
+    gap: 2rem;
+}
+
+nav > ul > li > a:link,
+nav > ul > li > a:visited {
+    text-decoration: var(--none);
+}
+
+.logo,
+footer > ul > li {
+    width: 3%;
+    height: 3%;
+}
+
+.image,
+footer > ul > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    flex-direction: column;
+    align-items: var(--center);
+    gap: 2rem;
+    background-image: url(../images/back-ground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: var(--center);
+    padding: 5rem;
+    text-align: center;
+}
+
+.hero > img {
+    width: 20%;
+    border-radius: 50%;
+    border: 5px solid var(--dark-sky-color);
+}
+
+.hero > h2 {
+    font-size: 3rem;
+    color: #abc913;
+}
+
+.btn {
+    background-color: var(--white);
+    border: 5px solid var(--dark-sky-color);
+    color: var(--dark-sky-color);
+    padding: 5px 10px;
+    text-decoration: var(--none);
+}
+
+.dog-list {
+    width: 80%;
+    margin: 3rem auto;
+    gap: 5rem;
+}
+
+.dog-list > div {
+    width: 30%;
+    flex-direction: column;
+    align-items: var(--center);
+    gap: 3rem;
+    text-align: var(--center);
+}
+
+.dog-list > div > img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 2px solid var(--dark-sky-color);
+}
+
+footer {
+    background-color: var(--dark-sky-color);
+    text-align: var(--center);
+    padding: 3rem 0;
+}
+
+footer > ul > li > img {
+    cursor: pointer;
+}
+
+footer > ul {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    list-style-type: var(--none);
+    gap: 3rem;
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: var(--none);
+}
+
+footer a:active,
+footer a:hover {
+    border: 5px solid var(--white);
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
